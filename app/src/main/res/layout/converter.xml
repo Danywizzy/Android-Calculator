@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.AppCompat.DayNight.DarkActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor"
+    android:orientation="vertical"
+    android:theme="@style/App">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Length converter"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView"
+        android:background="#676664" />
+
+    <Spinner
+        android:id="@+id/spinnerfrom"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:entries="@array/length_units"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@id/spinnerfrom" />
+
+    <View
+        android:layout_marginBottom="25dp"
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/enter"
+        android:background="#676664" />
+
+    <Spinner
+        android:id="@+id/spinnerto"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:entries="@array/length_units" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/convert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="result"
+        android:textColor="@color/primaryTextColor" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickConvertButtonEvent"
+        android:text="@string/convert_button" />
+
+</RelativeLayout>

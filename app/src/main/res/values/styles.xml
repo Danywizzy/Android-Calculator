@@ -1,0 +1,52 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+    </style>
+
+    <style name="App" parent="Theme.AppCompat">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+    </style>
+
+    <style name="mybuttonstyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="landscape_button" parent="@android:style/Widget.Button">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+
+    </style>
+
+    <style name="controlButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginEnd">75dp</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+</resources>

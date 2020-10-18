@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:textSize="35sp"
+        android:gravity="right"
+        android:textColor="@color/primaryTextColor" />
+
+    <GridLayout
+        android:id="@+id/control"
+        android:layout_width="630dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/line"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="2dp">
+
+        <Button
+            android:id="@+id/advancedMode"
+            style="@style/controlButton"
+            android:background="@drawable/ic_calculate_white_24dp" />
+
+        <Button
+            android:id="@+id/convert"
+            style="@style/controlButton"
+            android:background="@drawable/ic_square_foot_white_24dp" />
+
+        <Button
+            style="@style/controlButton"
+            android:visibility="invisible" />
+
+        <Button
+            style="@style/controlButton"
+            android:visibility="invisible" />
+
+        <Button
+            style="@style/controlButton"
+            android:visibility="invisible" />
+
+        <Button
+            style="@style/controlButton"
+            android:visibility="invisible" />
+
+        <Button
+            style="@style/controlButton"
+            android:id="@+id/backspace"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_backspace_white_24dp" />
+
+    </GridLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/keyboard"
+        android:background="#676664" />
+
+    <GridLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:columnCount="7"
+        android:orientation="vertical"
+        android:rowCount="5"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/strelki"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="⇄" />
+
+        <Button
+            android:id="@+id/sin"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="sin" />
+
+        <Button
+            android:id="@+id/ln"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="ln"/>
+
+        <Button
+            android:id="@+id/expsqr"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="e^x"/>
+
+        <Button
+            android:id="@+id/module"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="|x|" />
+
+        <Button
+            android:id="@+id/rad"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="Rad" />
+
+        <Button
+            android:id="@+id/cos"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="cos" />
+
+        <Button
+            android:id="@+id/log"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="log" />
+
+        <Button
+            android:id="@+id/sqr"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="x^2" />
+
+        <Button
+            android:id="@+id/pi"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="π" />
+
+        <Button
+            android:id="@+id/sqroot"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="√" />
+
+        <Button
+            android:id="@+id/tan"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="tan" />
+
+        <Button
+            android:id="@+id/drob"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="1/x" />
+
+        <Button
+            android:id="@+id/xsqr"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="x^y" />
+
+        <Button
+            android:id="@+id/exp"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="e" />
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="C"
+            android:textColor="#a95823" />
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/four"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/one"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/changePM"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/brackets"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="( )"
+            android:textColor="#477417" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/percent"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="%"
+            android:textColor="#477417" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="." />
+
+        <Button
+            android:id="@+id/division"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="÷"
+            android:textColor="#477417" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="×"
+            android:textColor="#477417" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="-"
+            android:textColor="#477417" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:text="+"
+            android:textColor="#477417" />
+
+        <Button
+            android:id="@+id/equals"
+            style="@style/landscape_button"
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="#477417"
+            android:text="=" />
+    </GridLayout>
+
+</RelativeLayout>
